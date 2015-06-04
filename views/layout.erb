@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Todo list</title>
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+        <link href="<%= url('css/bootstrap.min.css') %>" rel="stylesheet">
+        <link rel="stylesheet" href="<%= url('css/style.css') %>">
+        <link rel="author" href="humans.txt">
+    </head>
+    <body>
+        <div class="navbar navbar-default">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div>
+                        <h1 class="text-center">Ma Todo List</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="container">
+           <%= yield %>
+        </div>
+
+        <script src="js/jquery.js"></script>
+         <script src="js/bootstrap.js"></script>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+<p>Voulez-vous vraiment supprimer ce Todo:</p>
+<blockquote><p><%= @todo.content %></p></blockquote>
+<form action="/todos/delete/<%= @todo.id %>" method="POST">
+	<input type="hidden" name="_method" value="delete" />
+  	<button type="submit" class="btn btn-primary " name="ok">ok</button>
+  	<button type="submit" class="btn" name="annuler">Annuler</button>
+</form>

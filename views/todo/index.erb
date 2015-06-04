@@ -1,0 +1,27 @@
+<div class="new-todo">
+  <a href="/todos/new" class="btn btn-primary btn-new">Nouveau Todo</a>
+</div>
+<hr>
+<ul>
+  <div class="container-fluid">
+    <% @todos.each do |todo| %>
+      <div class="todo">
+        <h2><%= todo[:done] ? "<s>#{todo[:content]}</s>" : todo[:content] %></h2>
+          <% if todo[:done] %>
+            <div class="label label-success fait">Fait</div>
+          <% else %>
+            <span class="label label-info en-cours">En cours</span>
+          <% end %>
+      </div>
+      <div class="date"></div>
+        <h4>créé le : <%= format_date(todo[:created_at]) %></h4>
+        <h4>modifié le : <%= format_date(todo[:updated_at]) %></h4>
+        <h4>modifié le : <%= format_date(todo[:completed_at]) %></h4>
+        <a href="/todos/edit/<%= todo[:id] %>" class="btn btn-warning edit">Edit</a>
+        <a href="/todos/delete/<%= todo[:id] %>" class="btn btn-danger delete">Delete</a>
+    <hr>
+    <% end %>
+  </div>
+  <hr>
+</ul> 
+

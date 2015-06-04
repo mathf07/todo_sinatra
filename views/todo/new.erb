@@ -1,0 +1,7 @@
+<h3>Nouveau Todo</h3>
+
+<form action="/todos" class="form-inline" method="POST">
+  <textarea class="input-xlarge" id="todo_content" placeholder="Mon Todo" name="todo[content]" value="<%= @todo.content %>"></textarea>
+  <hr>
+  <button type="submit" class="btn btn-primary btn-new">Ajouter un Todo</button>
+</form>

@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'skinny_jeans';
+    src: url('fonts/skinny_jeans.eot');
+    src: url('fonts/skinny_jeans.eot') format('embedded-opentype'),
+         url('fonts/skinny_jeans.woff2') format('woff2'),
+         url('fonts/skinny_jeans.woff') format('woff'),
+         url('fonts/skinny_jeans.ttf') format('truetype'),
+         url('fonts/skinny_jeans.svg#skinny_jeans') format('svg');
+}
+
+.delete {
+	border-radius: 0;
+	border-color: transparent;
+}
+.edit {
+	border-radius: 0;
+	border-color: transparent;
+	margin-right: 6%;	
+}
+.delete:hover {
+	background-color: #e74c3c;
+	border-radius: 0;
+	border-color: transparent;
+}
+.edit:hover {
+	background-color: #f1c40f;
+	border-radius: 0;
+	border-color: transparent;
+	margin-right: 6%;
+}
+.fait {
+	background-color: #2ecc71;
+	border-radius: 0;
+	border-color: transparent;
+}
+.en-cours {
+	background-color: #7f8c8d;
+	border-radius: 0;
+	border-color: transparent;
+
+}
+.btn-new {
+	background-color: #3498db;
+	border-radius: 0;
+	border-color: transparent;
+}
+.btn-new:hover {
+	background-color: #3fd47d;
+	border-color: transparent;
+}
+.navbar h1 {
+	color: #7f8c8d;	
+}
+li {
+	text-decoration: none;
+}
