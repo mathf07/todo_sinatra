@@ -1,5 +1,6 @@
 
 <h1>Editer mon Todo</h1>
+
 <form action="/todos/<%= @todo.id %>" method="post">
   <input type="hidden" name="_method" value="put" />
   <textarea class="input-xlarge" id="todo_content" name="todo[content]"><%= @todo.content %></textarea> 
@@ -8,6 +9,4 @@
   <input id="done" name="todo[done]" type="checkbox" value="true" <%= @todo.done ? "checked" : "" %>/>
   <hr>
   <button type="submit" class="btn btn-warning edit" name="Editer">Editer</button>
-  
-  <!-- <input type="submit" class="btn btn-primary edit" value="Editer Todo" /> -->
 </form>

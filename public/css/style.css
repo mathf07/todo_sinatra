@@ -1,13 +1,3 @@
-@font-face {
-    font-family: 'skinny_jeans';
-    src: url('fonts/skinny_jeans.eot');
-    src: url('fonts/skinny_jeans.eot') format('embedded-opentype'),
-         url('fonts/skinny_jeans.woff2') format('woff2'),
-         url('fonts/skinny_jeans.woff') format('woff'),
-         url('fonts/skinny_jeans.ttf') format('truetype'),
-         url('fonts/skinny_jeans.svg#skinny_jeans') format('svg');
-}
-
 .delete {
 	border-radius: 0;
 	border-color: transparent;
